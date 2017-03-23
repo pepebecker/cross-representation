@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <title>Homophobia&homophilia in Caribbean: Download appendices</title>
+    <link rel="icon" href="/img/favicon.ico">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/styles.css" rel="stylesheet" type="text/css"/>
+    <link href="/packages/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <script src="/js/jquery-lang.js" charset="utf-8" type="text/javascript"></script>
+    <script src="/js/jquery.min.js" type="text/javascript"></script>
+    <script src="/js/js.cookie.js" type="text/javascript"></script>
+  </head>
+  <body onload="seePdf()">
+        <div class="container">
+     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Navigation ein-/ausblenden</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+            <div>  <a class="crossrep navbar-brand" href="/index.html" title="Home"><span lang="en">Cross Representation</span></a>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            
+            <li> <a href="/homofobia_caribe/supporting-videos/index.html"><span lang="en">Supporting videos</span></a> </li>
+ 
+          </ul>
+         
+        </div><!-- /.navbar-collapse -->
+    </nav>
+
+    <div class="page-header">
+      <h1 lang="en">Homophobia and homophilia in Cuba and the Colombian Caribbean coast</h1>
+        
+        <a href="/homofobia_caribe.html"> 
+          <span class="glyphicon glyphicon-triangle-top"></span>
+        </a>
+      <h3><strong><span lang="en">Download Appendices</span></strong></h3>
+
+    </div>
+    <div id="langChanger"><a href="?lang=en" onclick="setLanguage('en'); return false;">English</a> | <a href="?lang=de" onclick="setLanguage('de'); return false;">Deutsch</a> | <a href="?lang=es" onclick="setLanguage('es'); return false;">Español</a></div>
+
+          <div id="entercode">
+                <h5 lang="en">
+                Please, enter the activation code (see page 227 of the book) to get access to the appendices.
+                </h5>
+                <input class="codeentry" type="text"/>
+                <button class="submit btn btn-primary"><span lang="en">Unlock all features now</span></button>
+          </div>
+          <div id="enteredcode">
+                <button class="btn btn-success" data-toggle="modal" data-target=".bs-enteredkey-modal-lg"><span lang="en">See all appendices now</span></button>
+          </div>    
+    
+    <br>
+    <br>
+          <div id="enteredcode">
+                <button class="btn btn-success" data-toggle="modal" data-target=".bs-enteredkey-modal-md"><span lang="en">All features are unlocked now</span></button>
+          </div>    
+          <div class="modal fade bs-enteredkey-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h2 lang="en">Appendices</h2>
+                  </div>
+                  <div class="modal-body">
+                      <embed id="buttondiv" src="/homofobia_caribe/download-appendices/appendicesI-III.pdf">
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div id="wrongcode">
+              <button class="btn btn-warning" data-toggle="modal" data-target=".bs-wrongkey-modal-lg"><span lang="en">Wrong key. Please, try again!</span></button>
+          </div>
+          <div class="modal fade bs-wrongkey-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h2 lang="en">Enter the correct code</h2>  
+                  </div>
+                  <div class="modal-body">
+                      <span lang="en">You should enter the activation code to be found on page 227 of the print version of the monograph</span> <a href="./homofobia_caribe.html">Homofobia y homofilia en Cuba y el Caribe Columbiano</a>
+                  </div>
+              </div>
+            </div>
+          </div>
+<!--    <div id="buttondiv">    
+    <button class="btn btn-primary" id="buttonappendices" onclick="seePdf()"> 
+                <a href="#entercode"><span lang="en">Download Appendices</span></a>
+    </button>
+    </div>-->
+  </div> <!-- end container-->
+
+
+    <script src="/js/jquery.min.js" type="text/javascript"></script>
+    <script src="/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/js/google-analytics.js" type="text/javascript"></script>
+    <script src='/js/pdfobject.js'></script>
+    <script src="/js/language.js" charset="utf-8" type="text/javascript"></script>
+    <script> 
+    var button = document.querySelector(".submit");
+    button.addEventListener("click", function (e) {
+        function xhr (method, url, callback) {
+            var xhr = new XMLHttpRequest()
+            xhr.open(method, url, true)
+            xhr.onreadystatechange = function() {
+                if (this.readyState === this.DONE) {
+                    callback(this)
+                }
+            }
+            xhr.send()
+        }
+        
+        var url = 'https://cross-representation-4a98e.firebaseio.com/invite-codes.json';
+        var code = document.querySelector(".codeentry").value
+        
+        xhr('GET', url, function(response) {
+            if (response.status !==404) {
+                data = JSON.parse(response.responseText);
+                var keys = Object.keys(data);
+                keys = keys.filter(function (key) {
+                    return data[key].value === code;
+                });
+                if (keys.length) {
+                    Cookies.set("activated", "true");
+                    $("#enteredcode").show();     
+                    $("#entercode").hide();
+                    $("#wrongcode").hide();
+                }
+                else {
+                    $("#wrongcode").show();
+                }
+            }
+            else {
+             $("#wrongcode").text('404 - Not Found')
+             $("#wrongcode").show();                
+            }
+        });
+    });
+    </script>
+
+<script>
+   if (Cookies.get("activated")) {
+       $("entercode").hide();
+   }
+   
+// solution without jquery:          if (Cookies.get("activated")) {
+// document.getElementById("entercode").css-class-with-some-display:none
+   
+</script>
+<script> 
+    function seePdf() {
+        if (Cookies.get("activated")) {
+            $("#entercode").hide();
+            $("#enteredcode").show();
+            PDFObject.embed("/homofobia_caribe/download-appendices/appendicesI-III.pdf", "#buttondiv");
+        }
+    }
+</script>
+  </body>
+</html>

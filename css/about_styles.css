@@ -1,0 +1,36 @@
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header h3{
+	text-align: center;
+}
+
+.column {
+	display: inline-block;
+	width: 30%;
+	float: left;	
+	margin: 0 auto;
+	position: relative;
+	padding: 30px;
+}
+
+#main-text {
+	clear: both;
+	padding-top: 40px;
+}
+
+.image {
+	width: 30%;
+	float: left; 
+	display: inline-block;
+	position: relative;
+}
+
+#frontFoto {
+
+    border-radius: 30px;
+    padding: 50px;
+    margin-top: 10px;
+}
