@@ -584,3 +584,7 @@ li {
 .form-control {
     width: 110%;
 }
+
+#bs-example-navbar-collapse-1 {
+    max-height: none;
+}
