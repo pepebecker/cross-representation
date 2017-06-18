@@ -1144,148 +1144,139 @@ module.exports={
   ]
 }
 },{}],27:[function(require,module,exports){
-'use strict'
+'use strict';
 
-const bel = require('bel')
-const csjs = require('csjs-inject')
+var _templateObject = _taggedTemplateLiteral(['', ''], ['', '']),
+    _templateObject2 = _taggedTemplateLiteral(['\n      <g>\n        <circle class="', ' ', '" id=', '\n        cx=', ' cy=', ' r="16">\n        <text class=', ' x=', ' y=', '>\n          ', '\n        </text>\n      </g>\n      '], ['\n      <g>\n        <circle class="', ' ', '" id=', '\n        cx=', ' cy=', ' r="16">\n        <text class=', ' x=', ' y=', '>\n          ', '\n        </text>\n      </g>\n      ']),
+    _templateObject3 = _taggedTemplateLiteral(['\n      <g class=', '>\n        <line x1=', ' y1=', ' x2=', ' y2=', '></line>\n        ', '\n      </g>'], ['\n      <g class=', '>\n        <line x1=', ' y1=', ' x2=', ' y2=', '></line>\n        ', '\n      </g>']),
+    _templateObject4 = _taggedTemplateLiteral(['\n  \t<svg class=', ' width="384" height="384">\n      ', '\n      ', '\n    </svg>\n  '], ['\n  \t<svg class=', ' width="384" height="384">\n      ', '\n      ', '\n    </svg>\n  ']),
+    _templateObject5 = _taggedTemplateLiteral(['<g transform="', ' ', ' ', '">', '</g>'], ['<g transform="', ' ', ' ', '">', '</g>']),
+    _templateObject6 = _taggedTemplateLiteral(['\n    <div class=', '>\n      <div class=', ' onclick=', '></div>\n      <div class=', '>\n        <span id="close-x" onclick=', '>', '</span>\n        <video width="640" height="480" autoplay controls>\n          <source src=', ' type="video/mp4">\n        </video>\n      </div>\n    </div>\n  '], ['\n    <div class=', '>\n      <div class=', ' onclick=', '></div>\n      <div class=', '>\n        <span id="close-x" onclick=', '>', '</span>\n        <video width="640" height="480" autoplay controls>\n          <source src=', ' type="video/mp4">\n        </video>\n      </div>\n    </div>\n  ']);
 
-const style = require('./style.css')
-const mu = require('./math-utils')
+function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-const relations = require('./assets/relations')
-const arrow = require('./assets/arrow.svg')
-const cancel = require('./assets/cancel.svg')
+var bel = require('bel');
+var csjs = require('csjs-inject');
 
-const css = csjs`${style}`
+var style = require('./style.css');
+var mu = require('./math-utils');
 
-const rootElement = document.querySelector('#interactive-svg')
+var relations = require('./assets/relations');
+var arrow = require('./assets/arrow.svg');
+var cancel = require('./assets/cancel.svg');
 
-let popup = undefined
+var css = csjs(_templateObject, style);
 
-start()
+var rootElement = document.querySelector('#interactive-svg');
 
-function start () {
-  const nodes = relations.nodes.map((node, i) => {
-    node.dom = bel`
-      <g>
-        <circle class="${css.node} ${css[node.type]}" id=${i}
-        cx=${node.x} cy=${node.y} r="16">
-        <text class=${css.name} x=${node.x - 7} y=${node.y + 5}>
-          ${node.name}
-        </text>
-      </g>
-      `
-    node.dom.onclick = _ => showNode(node)
-    return node.dom
-  })
-  const lines = relations.lines.map((line, i) => {
-    line.from = relations.nodes[line.from]
-    line.to = relations.nodes[line.to]
-    let p1 = mu.getPoint(line.from.x, line.from.y, line.to.x, line.to.y, 18)
-    let p2 = mu.getPoint(line.to.x, line.to.y, line.from.x, line.from.y, 23)
-    let pA = mu.getPoint(line.to.x, line.to.y, line.from.x, line.from.y, 25)
-    line.dom = bel`
-      <g class=${css.line}>
-        <line x1=${p1.x} y1=${p1.y} x2=${p2.x} y2=${p2.y}></line>
-        ${createArrow(p1.x, p1.y, pA.x, pA.y, 0.045)}
-      </g>`
-    line.dom.onclick = _ => showLine(line)
-    line.dom.onmouseover = _ => onHoverLine(line)
-    line.dom.onmouseleave = _ => onLeaveLine(line)
-    return line.dom
-  })
+var popup = undefined;
 
-  let html = bel`
-  	<svg class=${css.svg} width="384" height="384">
-      ${nodes}
-      ${lines}
-    </svg>
-  `
+start();
 
-  rootElement.appendChild(html)
+function start() {
+  var nodes = relations.nodes.map(function (node, i) {
+    node.dom = bel(_templateObject2, css.node, css[node.type], i, node.x, node.y, css.name, node.x - 7, node.y + 5, node.name);
+    node.dom.onclick = function (_) {
+      return showNode(node);
+    };
+    return node.dom;
+  });
+  var lines = relations.lines.map(function (line, i) {
+    line.from = relations.nodes[line.from];
+    line.to = relations.nodes[line.to];
+    var p1 = mu.getPoint(line.from.x, line.from.y, line.to.x, line.to.y, 18);
+    var p2 = mu.getPoint(line.to.x, line.to.y, line.from.x, line.from.y, 23);
+    var pA = mu.getPoint(line.to.x, line.to.y, line.from.x, line.from.y, 25);
+    line.dom = bel(_templateObject3, css.line, p1.x, p1.y, p2.x, p2.y, createArrow(p1.x, p1.y, pA.x, pA.y, 0.045));
+    line.dom.onclick = function (_) {
+      return showLine(line);
+    };
+    line.dom.onmouseover = function (_) {
+      return onHoverLine(line);
+    };
+    line.dom.onmouseleave = function (_) {
+      return onLeaveLine(line);
+    };
+    return line.dom;
+  });
+
+  var html = bel(_templateObject4, css.svg, nodes, lines);
+
+  rootElement.appendChild(html);
 }
 
-function svgToDom (rawSVG) {
-  const parser = new DOMParser()
-  const dom = parser.parseFromString(rawSVG, 'text/xml')
-  return dom.querySelector('svg')
+function svgToDom(rawSVG) {
+  var parser = new DOMParser();
+  var dom = parser.parseFromString(rawSVG, 'text/xml');
+  return dom.querySelector('svg');
 }
 
-function createArrow (x1, y1, x2, y2, s) {
-  const offset = 5
-  const translate = `translate(${x2 - offset}, ${y2 - offset})`
-  const scale = `scale(${s})`
-  const rad = Math.atan2(y2 - y1, x2 - x1)
-  const rotate = `rotate(${rad * (180 / Math.PI)}, ${offset}, ${offset})`
-  return bel`<g transform="${translate} ${rotate} ${scale}">${svgToDom(arrow)}</g>`
+function createArrow(x1, y1, x2, y2, s) {
+  var offset = 5;
+  var translate = 'translate(' + (x2 - offset) + ', ' + (y2 - offset) + ')';
+  var scale = 'scale(' + s + ')';
+  var rad = Math.atan2(y2 - y1, x2 - x1);
+  var rotate = 'rotate(' + rad * (180 / Math.PI) + ', ' + offset + ', ' + offset + ')';
+  return bel(_templateObject5, translate, rotate, scale, svgToDom(arrow));
 }
 
-function createVideoPopup (link) {
-  popup = bel`
-    <div class=${css.popup}>
-      <div class=${css.backdrop} onclick=${closePopup}></div>
-      <div class=${css.content}>
-        <span id="close-x" onclick=${closePopup}>${svgToDom(cancel)}</span>
-        <video width="640" height="480" autoplay controls>
-          <source src=${link} type="video/mp4">
-        </video>
-      </div>
-    </div>
-  `
-  document.body.appendChild(popup)
+function createVideoPopup(link) {
+  popup = bel(_templateObject6, css.popup, css.backdrop, closePopup, css.content, closePopup, svgToDom(cancel), link);
+  document.body.appendChild(popup);
 }
 
-function closePopup () {
+function closePopup() {
   if (popup) {
-    popup.parentNode.removeChild(popup)
-    popup = null
+    popup.parentNode.removeChild(popup);
+    popup = null;
   }
 }
 
-function showNode (node) {
-  createVideoPopup(node.link)
+function showNode(node) {
+  createVideoPopup(node.link);
 }
 
-function showLine (line) {
-  alert(line.from.name + ' –––> ' + line.to.name)
+function showLine(line) {
+  alert(line.from.name + ' –––> ' + line.to.name);
 }
 
-function onHoverLine (line) {
-  line.dom.parentNode.appendChild(line.dom)
-  line.dom.classList.add(css.hover)
+function onHoverLine(line) {
+  line.dom.parentNode.appendChild(line.dom);
+  line.dom.classList.add(css.hover);
 }
 
-function onLeaveLine (line) {
-  line.dom.classList.remove(css.hover)
+function onLeaveLine(line) {
+  line.dom.classList.remove(css.hover);
 }
 
 },{"./assets/arrow.svg":24,"./assets/cancel.svg":25,"./assets/relations":26,"./math-utils":28,"./style.css":29,"bel":1,"csjs-inject":4}],28:[function(require,module,exports){
-'use strict'
+'use strict';
 
-function getDistance (x1, y1, x2, y2) {
-  return Math.sqrt(Math.pow(x1 - x2, 2) + Math.pow(y1 - y2, 2))
+function getDistance(x1, y1, x2, y2) {
+  return Math.sqrt(Math.pow(x1 - x2, 2) + Math.pow(y1 - y2, 2));
 }
 
-function getVector (x1, y1, x2, y2) {
-  return {x: x2 - x1, y: y2 - y1}
+function getVector(x1, y1, x2, y2) {
+  return { x: x2 - x1, y: y2 - y1 };
 }
 
-function getNormVector (_vec) {
-  const d = getDistance(0, 0, _vec.x, _vec.y)
-  const x = _vec.x / d
-  const y = _vec.y / d
-  return {x, y}
+function getNormVector(_vec) {
+  var d = getDistance(0, 0, _vec.x, _vec.y);
+  var x = _vec.x / d;
+  var y = _vec.y / d;
+  return { x: x, y: y };
 }
 
-function getPoint (x1, y1, x2, y2, d) {
-  let vec = getVector(x1, y1, x2, y2)
-  vec = getNormVector(vec)
-  return {x: x1 + vec.x * d, y: y1 + vec.y * d}
+function getPoint(x1, y1, x2, y2, d) {
+  var vec = getVector(x1, y1, x2, y2);
+  vec = getNormVector(vec);
+  return { x: x1 + vec.x * d, y: y1 + vec.y * d };
 }
 
 module.exports = {
-	getPoint
-}
+  getPoint: getPoint
+};
+
 },{}],29:[function(require,module,exports){
 module.exports = ".svg{max-width:100%;max-height:100%}.circle{fill:#add8e6}.point{fill:#fff}.special{fill:#ff0}.node{stroke-width:4px;cursor:pointer;stroke:#000}.node:hover{stroke:orange}.name{font-family:Verdana;font-size:15px;pointer-events:none}.line{fill:#000;stroke:#000;stroke-width:4px;cursor:pointer}.line.hover{fill:orange;stroke:orange}.popup{position:absolute;left:0;top:0;width:100%;height:100%;text-align:center}.popup>.backdrop{background:rgba(255,255,255,.8);position:absolute;left:0;top:0;width:100%;height:100%}.popup>.content{position:fixed;display:inline-flex;border-radius:20px;box-shadow:0 0 20px #AAA;padding:30px;background:#fff;top:50vh;margin-top:-270px;margin-left:-350px}#close-x{position:absolute;right:10px;top:10px;font-weight:700;cursor:pointer;width:15px;stroke:silver;stroke-width:2px}#close-x:hover{stroke:#000}";
 },{}]},{},[27]);
