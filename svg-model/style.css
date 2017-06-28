@@ -1,0 +1,92 @@
+Ω.video-popup {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.video-popup.active {
+  display: block;
+}
+
+.video-popup > .backdrop {
+  background: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video-popup > .content {
+  position: fixed;
+  box-shadow: 0 0 3px 3px black;
+  display: inline-flex;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #AAA;
+  padding: 30px;
+  background: white;
+  top: 50vh;
+  margin-top: -270px;
+  margin-left: -350px;
+}
+
+#close-x {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 15px;
+}
+
+.text-popup {
+  min-width: 200px;
+  max-width: 400px;
+  border: 1px solid black;
+  border-radius: 0 10px 10px 10px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: white;
+  text-align: center;
+  font-family: Verdana;
+  opacity: 0;
+  transition: opacity ease .2s;
+  pointer-events: none;
+}
+
+.text-popup.active {
+  opacity: 0.9;
+}
+
+.text-popup .name {
+  position: absolute;
+  left: 0;
+  box-sizing: border-box;
+  width: 60px;
+  top: calc(50% - 2px);
+  transform: translate(0,-50%);
+  font-size: 1.3em;
+  float: left;
+  display: none;
+}
+
+.text-popup .name.name-active {
+  display: block;
+}
+
+.text-popup .description {
+  padding: 10px;
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.text-popup .description.name-active {
+  margin: 0 0 0 50px;
+  text-align: left;
+  font-size: 1em;
+}

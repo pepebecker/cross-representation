@@ -1,0 +1,44 @@
+{
+	"es": {
+		"x1": "Índice del nivel de aceptación del homosexual",
+		"x2": "Doble moral con respecto a la homosexualidad",
+		"x3": "Estereotipo cultural sobre la homosexualidad",
+		"x4": "Estereotipo religioso sobre la homosexualidad",
+		"x5": "Rasgos homofóbicos en el lenguaje",
+		"x6": "Machismo en el lenguaje",
+		"x7": "Comentario sobre la existencia de machismo en la sociedad",
+		"x8": "Comentario sobre la discriminación social del homosexual",
+		"a1": "Aceptación general del homosexual",
+		"a2": "Tenencia de amigos homosexuales",
+		"a3": "Aceptación del homosexual en el círculo de amigos",
+		"a4": "Aceptación del homosexual en el círculo familiar"
+	},
+	"en": {
+		"x1": "Índice del nivel de aceptación del homosexual (Index of level of acceptance of homosexuals)",
+		"x2": "Doble moral con respecto a la homosexualidad (double standards towards homosexuality)",
+		"x3": "Estereotipo cultural sobre la homosexualidad (cultural stereotypes towards homosexuality)",
+		"x4": "Estereotipo religioso sobre la homosexualidad (religious stereotypes towards homosexuality)",
+		"x5": "Rasgos homofóbicos en el lenguaje (homophobic elements in the language)",
+		"x6": "Machismo en el lenguaje (machismo in the language)",
+		"x7": "Comentario sobre la existencia de machismo en la sociedad (Kommentare über die Existenz von machismo in der Gesellschaft)",
+		"x8": "Comentario sobre la discriminación social del homosexual (Kommentare zur sozialen Diskriminierung von Homosexuellen)",
+		"a1": "Aceptación general del homosexual (general acceptance of homosexuals)",
+		"a2": "Tenencia de amigos homosexuales (existence of homosexual friends)",
+		"a3": "Aceptación del homosexual en el círculo de amigos (acceptance of homosexuals inside the circle of friends)",
+		"a4": "Aceptación del homosexual en el círculo familiar (acceptance of homosexuals inside the family circle)"
+	},
+	"de": {
+		"x1": "Índice del nivel de aceptación del homosexual (Index des Akzeptanzniveaus von Homosexuellen)",
+		"x2": "Doble moral con respecto a la homosexualidad (Doppelmoral hinsichtlich der Homosexualität)",
+		"x3": "Estereotipo cultural sobre la homosexualidad (kulturelle Stereotype über die Homosexualität)",
+		"x4": "Estereotipo religioso sobre la homosexualidad (religiöse Stereotype hinsichtlich der Homosexualität)",
+		"x5": "Rasgos homofóbicos en el lenguaje (homophobe Elemente in der Sprache)",
+		"x6": "Machismo en el lenguaje (machismo in der Sprache)",
+		"x7": "Comentario sobre la existencia de machismo en la sociedad (Kommentare über die Existenz von machismo in der Gesellschaft)",
+		"x8": "Comentario sobre la discriminación social del homosexual (Kommentare zur sozialen Diskriminierung von Homosexuellen)",
+		"a1": "Aceptación general del homosexual (allgemeine Akzeptanz von Homosexuellen)",
+		"a2": "Tenencia de amigos homosexuales (Vorhandensein homosexueller Freunde)",
+		"a3": "Aceptación del homosexual en el círculo de amigos (Akzeptanz von Homosexuellen im Freundeskreis)",
+		"a4": "Aceptación del homosexual en el círculo familiar (Akzeptanz von Homosexuellen im Familienkreis)"
+	}
+}
