@@ -11,7 +11,8 @@
 		"a1": "Aceptación general del homosexual",
 		"a2": "Tenencia de amigos homosexuales",
 		"a3": "Aceptación del homosexual en el círculo de amigos",
-		"a4": "Aceptación del homosexual en el círculo familiar"
+		"a4": "Aceptación del homosexual en el círculo familiar",
+		"s1": "Sexo"
 	},
 	"en": {
 		"x1": "Índice del nivel de aceptación del homosexual (Index of level of acceptance of homosexuals)",
@@ -25,7 +26,8 @@
 		"a1": "Aceptación general del homosexual (general acceptance of homosexuals)",
 		"a2": "Tenencia de amigos homosexuales (existence of homosexual friends)",
 		"a3": "Aceptación del homosexual en el círculo de amigos (acceptance of homosexuals inside the circle of friends)",
-		"a4": "Aceptación del homosexual en el círculo familiar (acceptance of homosexuals inside the family circle)"
+		"a4": "Aceptación del homosexual en el círculo familiar (acceptance of homosexuals inside the family circle)",
+		"s1": "Sexo (Gender)"
 	},
 	"de": {
 		"x1": "Índice del nivel de aceptación del homosexual (Index des Akzeptanzniveaus von Homosexuellen)",
@@ -39,6 +41,7 @@
 		"a1": "Aceptación general del homosexual (allgemeine Akzeptanz von Homosexuellen)",
 		"a2": "Tenencia de amigos homosexuales (Vorhandensein homosexueller Freunde)",
 		"a3": "Aceptación del homosexual en el círculo de amigos (Akzeptanz von Homosexuellen im Freundeskreis)",
-		"a4": "Aceptación del homosexual en el círculo familiar (Akzeptanz von Homosexuellen im Familienkreis)"
+		"a4": "Aceptación del homosexual en el círculo familiar (Akzeptanz von Homosexuellen im Familienkreis)",
+		"s1": "Sexo (Geschlecht)"
 	}
 }

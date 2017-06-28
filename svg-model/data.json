@@ -1,263 +1,170 @@
 {
 	"nodes": [
 		{
-			"x": 307,
-			"y": 49,
-			"description": "x1",
+			"x": 224,
+			"y": 128,
 			"name": "X₁",
+			"description": "x1",
 			"type": "circle",
 			"id": "node-0"
 		},
 		{
-			"x": 152,
-			"y": 20,
-			"description": "x2",
+			"x": 224,
+			"y": 32,
 			"name": "X₂",
+			"description": "x2",
 			"type": "circle",
 			"id": "node-1"
 		},
 		{
-			"x": 255,
-			"y": 201,
-			"description": "x3",
+			"x": 224,
+			"y": 224,
 			"name": "X₃",
+			"description": "x3",
 			"type": "circle",
 			"id": "node-2"
 		},
 		{
-			"x": 124,
-			"y": 124,
-			"description": "x4",
-			"name": "X₄",
+			"x": 320,
+			"y": 32,
+			"name": "X₇",
+			"description": "x7",
 			"type": "circle",
 			"id": "node-3"
 		},
 		{
-			"x": 165,
-			"y": 237,
-			"description": "x5",
-			"name": "X₅",
-			"type": "special",
+			"x": 320,
+			"y": 224,
+			"name": "X₈",
+			"description": "x8",
+			"type": "circle",
 			"id": "node-4"
 		},
 		{
-			"x": 52,
-			"y": 197,
-			"description": "x6",
-			"name": "X₆",
-			"type": "circle",
+			"x": 32,
+			"y": 128,
+			"name": "S₁",
+			"description": "s1",
+			"type": "special",
 			"id": "node-5"
 		},
 		{
-			"x": 18,
-			"y": 126,
-			"description": "x7",
-			"name": "X₇",
-			"type": "circle",
+			"x": 320,
+			"y": 128,
+			"name": "a₁",
+			"description": "a1",
+			"type": "point",
 			"id": "node-6"
 		},
 		{
-			"x": 49,
-			"y": 55,
-			"description": "x8",
-			"name": "X₈",
-			"type": "circle",
+			"x": 96,
+			"y": 128,
+			"name": "a₂",
+			"description": "a2",
+			"type": "point",
 			"id": "node-7"
 		},
 		{
-			"x": 327,
-			"y": 209,
-			"description": "a1",
-			"name": "a1",
+			"x": 128,
+			"y": 32,
+			"name": "a₃",
+			"description": "a3",
 			"type": "point",
 			"id": "node-8"
 		},
 		{
-			"x": 185,
-			"y": 146,
-			"description": "a2",
-			"name": "a2",
+			"x": 128,
+			"y": 224,
+			"name": "a₄",
+			"description": "a4",
 			"type": "point",
 			"id": "node-9"
-		},
-		{
-			"x": 324,
-			"y": 163,
-			"description": "a3",
-			"name": "a3",
-			"type": "point",
-			"id": "node-10"
-		},
-		{
-			"x": 327,
-			"y": 97,
-			"description": "a4",
-			"name": "a4",
-			"type": "point",
-			"id": "node-11"
 		}
 	],
 	"lines": [
 		{
-			"from": 5,
+			"from": 1,
 			"to": 0,
-			"correlation": "-0.7409",
-			"id": "line-0",
-			"dom": {}
-		},
-		{
-			"from": 5,
-			"to": 1,
-			"correlation": "0.7093",
-			"id": "line-1",
-			"dom": {}
-		},
-		{
-			"from": 5,
-			"to": 2,
-			"correlation": "0.7925",
-			"id": "line-2",
-			"dom": {}
-		},
-		{
-			"from": 5,
-			"to": 4,
-			"correlation": "0.8760",
-			"id": "line-3",
-			"dom": {}
-		},
-		{
-			"from": 5,
-			"to": 7,
-			"correlation": "-0.534",
-			"id": "line-4",
-			"dom": {}
-		},
-		{
-			"from": 4,
-			"to": 0,
-			"correlation": "-0.778",
-			"id": "line-5",
-			"dom": {}
-		},
-		{
-			"from": 4,
-			"to": 1,
-			"correlation": "0.791",
-			"id": "line-6",
-			"dom": {}
-		},
-		{
-			"from": 4,
-			"to": 2,
-			"correlation": "0.82",
-			"id": "line-7",
-			"dom": {}
-		},
-		{
-			"from": 0,
-			"to": 1,
-			"correlation": "-0.826",
-			"id": "line-8",
-			"dom": {}
-		},
-		{
-			"from": 0,
-			"to": 2,
-			"correlation": "-0.77",
-			"id": "line-9",
-			"dom": {}
-		},
-		{
-			"from": 0,
-			"to": 6,
-			"correlation": "0.637",
-			"id": "line-10",
-			"dom": {}
-		},
-		{
-			"from": 0,
-			"to": 7,
-			"correlation": "0.686",
-			"id": "line-11",
-			"dom": {}
-		},
-		{
-			"from": 4,
-			"to": 6,
-			"correlation": "-0.530",
-			"id": "line-12",
-			"dom": {}
-		},
-		{
-			"from": 4,
-			"to": 7,
-			"correlation": "-0.600",
-			"id": "line-13",
-			"dom": {}
+			"correlation": -0.826,
+			"id": "line-0"
 		},
 		{
 			"from": 2,
+			"to": 0,
+			"correlation": -0.77,
+			"id": "line-1"
+		},
+		{
+			"from": 3,
+			"to": 0,
+			"correlation": 0.637,
+			"id": "line-2"
+		},
+		{
+			"from": 4,
+			"to": 0,
+			"correlation": 0.686,
+			"id": "line-3"
+		},
+		{
+			"from": 6,
+			"to": 0,
+			"correlation": 0,
+			"id": "line-4"
+		},
+		{
+			"from": 6,
 			"to": 8,
-			"correlation": "-0.576",
-			"id": "line-14",
-			"dom": {}
+			"correlation": 0,
+			"id": "line-5"
 		},
 		{
-			"from": 2,
-			"to": 9,
-			"correlation": "-0.559",
-			"id": "line-15",
-			"dom": {}
+			"from": 7,
+			"to": 0,
+			"correlation": 0,
+			"id": "line-6"
 		},
 		{
-			"from": 2,
-			"to": 10,
-			"correlation": "-0.682",
-			"id": "line-16",
-			"dom": {}
+			"from": 8,
+			"to": 0,
+			"correlation": 0,
+			"id": "line-7"
 		},
 		{
-			"from": 2,
-			"to": 11,
-			"correlation": "-0.780",
-			"id": "line-17",
-			"dom": {}
-		},
-		{
-			"from": 1,
-			"to": 11,
-			"correlation": "-0.891",
-			"id": "line-18",
-			"dom": {}
-		},
-		{
-			"from": 1,
-			"to": 10,
-			"correlation": "-0.610",
-			"id": "line-19",
-			"dom": {}
-		},
-		{
-			"from": 1,
-			"to": 2,
-			"correlation": "0.780",
-			"id": "line-20",
-			"dom": {}
-		},
-		{
-			"from": 1,
-			"to": 6,
-			"correlation": "-0.656",
-			"id": "line-21",
-			"dom": {}
-		},
-		{
-			"from": 1,
+			"from": 8,
 			"to": 7,
-			"correlation": "-0.717",
-			"id": "line-22",
-			"dom": {}
+			"correlation": 0,
+			"id": "line-8"
+		},
+		{
+			"from": 9,
+			"to": 6,
+			"correlation": 0,
+			"id": "line-9"
+		},
+		{
+			"from": 9,
+			"to": 7,
+			"correlation": 0,
+			"id": "line-10"
+		},
+		{
+			"from": 9,
+			"to": 8,
+			"correlation": 0,
+			"id": "line-11"
+		},
+		{
+			"from": 9,
+			"to": 0,
+			"correlation": 0,
+			"id": "line-12"
+		},
+		{
+			"from": 5,
+			"to": 7,
+			"correlation": 0,
+			"id": "line-13"
 		}
 	]
 }

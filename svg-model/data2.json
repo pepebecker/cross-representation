@@ -1,0 +1,129 @@
+{
+  "nodes": [
+    {
+      "x": 128,
+      "y": 128,
+      "name": "X₁",
+      "type": "circle"
+    },
+    {
+      "x": 128,
+      "y": 64,
+      "name": "X₂",
+      "type": "circle"
+    },
+    {
+      "x": 192,
+      "y": 64,
+      "name": "X₃",
+      "type": "circle"
+    },
+    {
+      "x": 64,
+      "y": 128,
+      "name": "X₇",
+      "type": "circle"
+    },
+    {
+      "x": 64,
+      "y": 192,
+      "name": "X₈",
+      "type": "circle"
+    },
+    {
+      "x": 32,
+      "y": 32,
+      "name": "a₁",
+      "type": "point"
+    },
+    {
+      "x": 256,
+      "y": 256,
+      "name": "a₂",
+      "type": "point"
+    },
+    {
+      "x": 352,
+      "y": 32,
+      "name": "a₃",
+      "type": "point"
+    },
+    {
+      "x": 32,
+      "y": 352,
+      "name": "a₄",
+      "type": "point"
+    },
+    {
+      "x": 320,
+      "y": 320,
+      "name": "S₁",
+      "type": "special"
+    }
+  ],
+  "lines": [
+    {
+      "from": 1,
+      "to": 0,
+      "video": "cut5.mp4"
+    },
+    {
+      "from": 2,
+      "to": 0,
+      "video": "cut6.mp4"
+    },
+    {
+      "from": 3,
+      "to": 0,
+      "video": "cut3.mp4"
+    },
+    {
+      "from": 4,
+      "to": 0,
+      "video": "cut4.mp4"
+    },
+    {
+      "from": 5,
+      "to": 0,
+      "video": "cut1.mp4"
+    },
+    {
+      "from": 5,
+      "to": 7 
+    },
+    {
+      "from": 6,
+      "to": 0
+    },
+    {
+      "from": 7,
+      "to": 0,
+      "video": "cut2.mp4"
+    },
+    {
+      "from": 7,
+      "to": 6
+    },
+    {
+      "from": 8,
+      "to": 0
+    },
+    {
+      "from": 8,
+      "to": 5
+    },
+    {
+      "from": 8,
+      "to": 6
+    },
+    {
+      "from": 8,
+      "to": 7
+    },
+    {
+      "from": 9,
+      "to": 6,
+      "video": "cut2.mp4"
+    }
+  ]
+}

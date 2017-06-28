@@ -1,0 +1,151 @@
+{
+  "nodes": [
+    {
+      "x": 160,
+      "y": 192,
+      "name": "X₁",
+      "type": "circle",
+      "link": "http://www.cross-representation.com/videos/5.3.1/gerardo.mp4"
+    },
+    {
+      "x": 320,
+      "y": 32,
+      "name": "X₂",
+      "type": "circle",
+      "link": "http://www.cross-representation.com/videos/5.3.1/roberto.mp4"
+    },
+    {
+      "x": 192,
+      "y": 32,
+      "name": "X₃",
+      "type": "circle",
+      "link": "http://www.cross-representation.com/videos/5.3.1/natividad-iPhone.m4v"
+    },
+    {
+      "x": 320,
+      "y": 192,
+      "name": "X₄",
+      "type": "circle",
+      "link": "http://www.cross-representation.com/videos/5.3.1/mora.mp4"
+    },
+    {
+      "x": 288,
+      "y": 92,
+      "name": "X₅",
+      "type": "circle",
+      "link": "http://www.cross-representation.com/videos/5.3.2/lisa.mp4"
+    },
+    {
+      "x": 224,
+      "y": 92,
+      "name": "X₆",
+      "type": "circle",
+      "link": "http://www.cross-representation.com/videos/5.3.2/silfredo.mp4"
+    },
+    {
+      "x": 288,
+      "y": 160,
+      "name": "S₁",
+      "type": "special",
+      "link": "http://www.cross-representation.com/videos/5.3.3/tatiana.mp4"
+    },
+    {
+      "x": 128,
+      "y": 32,
+      "name": "a₁",
+      "type": "point",
+      "link": "http://www.cross-representation.com/videos/5.3.3/josefa.mp4"
+    },
+    {
+      "x": 32,
+      "y": 192,
+      "name": "a₂",
+      "type": "point",
+      "link": "http://www.cross-representation.com/videos/5.3.3/pedrin.mp4"
+    },
+    {
+      "x": 96,
+      "y": 128,
+      "name": "a₃",
+      "type": "point",
+      "link": "http://www.cross-representation.com/videos/5.3.3/ariel.mp4"
+    },
+    {
+      "x": 32,
+      "y": 32,
+      "name": "a₄",
+      "type": "point",
+      "link": "http://www.cross-representation.com/videos/5.3.3/lauren.mp4"
+    }
+  ],
+  "lines": [
+    {
+      "from": 0,
+      "to": 2
+    },
+    {
+      "from": 0,
+      "to": 3
+    },
+    {
+      "from": 0,
+      "to": 4
+    },
+    {
+      "from": 1,
+      "to": 2
+    },
+    {
+      "from": 1,
+      "to": 3
+    },
+    {
+      "from": 1,
+      "to": 4
+    },
+    {
+      "from": 2,
+      "to": 4
+    },
+    {
+      "from": 2,
+      "to": 5
+    },
+    {
+      "from": 5,
+      "to": 4
+    },
+    {
+      "from": 6,
+      "to": 4
+    },
+    {
+      "from": 7,
+      "to": 0
+    },
+    {
+      "from": 8,
+      "to": 0
+    },
+    {
+      "from": 9,
+      "to": 0
+    },
+    {
+      "from": 9,
+      "to": 8
+    },
+    {
+      "from": 10,
+      "to": 7
+    },
+    {
+      "from": 10,
+      "to": 8
+    },
+    {
+      "from": 10,
+      "to": 9
+    }
+  ]
+}
