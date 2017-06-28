@@ -152,7 +152,7 @@ SVGModel.prototype.renderLine = function (line, i) {
       'data-line-id': line.id,
       'data-index': i,
       correlation: line.correlation,
-      style: `stroke: rgb(${red}, ${green}, ${0})`
+      style: `stroke: rgb(${red}, ${green}, ${128})`
     }
   }, [
     h('line', {
